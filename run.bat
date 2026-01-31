@@ -1,7 +1,6 @@
 @echo off
 echo Starting Auto Downloader...
-echo Server running on http://localhost:5000
-echo Client running on http://localhost:5173
-echo.
-npm start
-pause
+start cmd /k "cd server && npm start"
+start cmd /k "cd client && npm run dev"
+echo Backend running on http://localhost:7860
+echo Frontend running on http://localhost:5173
