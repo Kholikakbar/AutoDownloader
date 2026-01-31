@@ -1,0 +1,19 @@
+{
+  "name": "auto-dowloader",
+  "version": "1.0.0",
+  "description": "A powerful full-stack web application to download videos and audio from popular platforms like YouTube, TikTok, Instagram, Facebook, and more.",
+  "main": "index.js",
+  "scripts": {
+    "start": "concurrently \"npm run server\" \"npm run client\"",
+    "server": "cd server && node index.js",
+    "client": "cd client && npm run dev",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "devDependencies": {
+    "concurrently": "^9.2.1"
+  }
+}
